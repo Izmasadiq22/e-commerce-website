@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import ProductCard from "./Productcard";
 import { Product } from "@/pages/types";
 
@@ -9,7 +9,7 @@ const Menu = () => {
   const [cart, setCart] = useState<Product[]>([]);
   const [showCart, setShowCart] = useState(false);
   const [isCheckout, setIsCheckout] = useState(false);
-  const router = useRouter();
+  // const router = useRouter();
 
   // Fetch products and retrieve saved cart on mount
   useEffect(() => {
